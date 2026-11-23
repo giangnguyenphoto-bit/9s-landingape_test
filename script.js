@@ -128,45 +128,45 @@
 
       // 33 Verified Branches Directory (Informational + Maps + Phone)
       var BRANCHES = [
-        { province: "Hồ Chí Minh", title: "Quận 5 (Chi Nhánh 1)", address: "04 Lô B chung cư Nguyễn Biểu, P.1, Quận 5, TP.HCM", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "Quận Phú Nhuận (Chi Nhánh 2)", address: "337 Phan Đình Phùng, P.15, Quận Phú Nhuận, TP.HCM", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "Quận Gò Vấp (Chi Nhánh 3)", address: "312 Lê Văn Thọ, P.11, Quận Gò Vấp, TP.HCM", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "Quận Bình Thạnh (Chi Nhánh 6)", address: "213/1 Nguyễn Gia Trí (D2), P.25, Quận Bình Thạnh, TP.HCM", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "TP. Thủ Đức (Chi Nhánh 7)", address: "29 Hoàng Diệu 2, TP. Thủ Đức, TP.HCM", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hồ Chí Minh", title: "Quận 5", address: "04, Lô B Chung cư Nguyễn Biểu, P.1, Quận 5, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hồ Chí Minh", title: "Quận Phú Nhuận", address: "337 Phan Đình Phùng, P.15, Quận Phú Nhuận, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hồ Chí Minh", title: "Quận Gò Vấp", address: "312 Lê Văn Thọ, P.11, Quận Gò Vấp, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hồ Chí Minh", title: "TP. Thủ Đức (Linh Trung)", address: "29 Hoàng Diệu 2, P. Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hồ Chí Minh", title: "TP. Thủ Đức (TTTM Gigamall)", address: "L5 - Booth 8, Tầng 5, TTTM GIGAMALL Thủ Đức, 240 - 242 Phạm Văn Đồng, P. Hiệp Bình, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Hà Nội", title: "Hoàn Kiếm (Chi Nhánh 23)", address: "49 Hàng Bài, Quận Hoàn Kiếm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Đống Đa (Chi Nhánh 24)", address: "36A Ô Chợ Dừa, Quận Đống Đa, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Ba Đình (Chi Nhánh 25)", address: "69 Đội Cấn, Quận Ba Đình, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Long Biên (Chi Nhánh 26)", address: "177 Ngọc Lâm, Quận Long Biên, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Nam Từ Liêm (Chi Nhánh 27)", address: "193 Hồ Tùng Mậu, P. Cầu Diễn, Nam Từ Liêm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Đại Mỗ / Thanh Xuân (Chi Nhánh 28)", address: "388 Nguyễn Trãi, P. Đại Mỗ, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Hoàn Kiếm", address: "49 Hàng Bài, Quận Hoàn Kiếm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Đống Đa", address: "36A Ô Chợ Dừa, Quận Đống Đa, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Ba Đình", address: "69B Đội Cấn, Quận Ba Đình, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Long Biên", address: "177 Ngọc Lâm, Quận Long Biên, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Nam Từ Liêm", address: "193 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", title: "Hà Đông", address: "11 Trần Phú, Quận Hà Đông, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Cần Thơ", title: "Ninh Kiều (Chi Nhánh 8)", address: "124 Mậu Thân, P. An Phú, Q. Ninh Kiều, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Cần Thơ", title: "Nguyễn Văn Cừ (Chi Nhánh 9)", address: "96 Nguyễn Văn Cừ nối dài, P. An Bình, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Cần Thơ", title: "Ninh Kiều", address: "124 Mậu Thân, P. An Phú, Q. Ninh Kiều, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Cần Thơ", title: "An Bình", address: "96 Nguyễn Văn Cừ nối dài, P. An Bình, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Đà Nẵng", title: "Hải Châu (Chi Nhánh 17)", address: "260 Trưng Nữ Vương, Q. Hải Châu, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đà Nẵng", title: "Đống Đa (Chi Nhánh 18)", address: "238 Đống Đa, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đà Nẵng", title: "Ngũ Hành Sơn (Chi Nhánh 19)", address: "71 Châu Thị Vĩnh Tế, Q. Ngũ Hành Sơn, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đà Nẵng", title: "Hải Châu", address: "260 Trưng Nữ Vương, Quận Hải Châu, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đà Nẵng", title: "Đống Đa", address: "238 Đống Đa, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đà Nẵng", title: "Ngũ Hành Sơn", address: "71 Châu Thị Vĩnh Tế, P. Ngũ Hành Sơn, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Đồng Tháp", group: "mientay", title: "TP. Cao Lãnh (Chi Nhánh 11)", address: "10 Nguyễn Huệ, P.1, TP. Cao Lãnh, Đồng Tháp", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Bạc Liêu", group: "mientay", title: "TP. Bạc Liêu (Chi Nhánh 13)", address: "228 Trần Phú, P.7, Khóm 3, TP. Bạc Liêu", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Kiên Giang", group: "mientay", title: "TP. Rạch Giá (Chi Nhánh 15)", address: "87 Nguyễn Trung Trực, P. Vĩnh Bảo, TP. Rạch Giá", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Tiền Giang", group: "mientay", title: "Mỹ Tho (Chi Nhánh 16)", address: "33 Lê Thị Hồng Gấm, P.4, TP. Mỹ Tho, Tiền Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "An Giang", group: "mientay", title: "Long Xuyên (Chi Nhánh 20)", address: "290 Lý Thái Tổ nối dài, TP. Long Xuyên, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "An Giang", group: "mientay", title: "Châu Đốc (Chi Nhánh 21)", address: "Tổ 12, Phan Đình Phùng, P. Châu Phú B, Châu Đốc, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Vĩnh Long", group: "mientay", title: "TP. Vĩnh Long (Chi Nhánh 29)", address: "77/1 Trưng Nữ Vương, P.1, TP. Vĩnh Long", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Vĩnh Long", group: "mientay", title: "TP. Vĩnh Long", address: "77/1 Trưng Nữ Vương, Phường 1, TP. Vĩnh Long", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "An Giang", group: "mientay", title: "TP. Long Xuyên", address: "290 Lý Thái Tổ nối dài, TP. Long Xuyên, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "An Giang", group: "mientay", title: "Châu Đốc", address: "Tổ 12, Phan Đình Phùng, P. Châu Phú B, Châu Đốc, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Kiên Giang", group: "mientay", title: "TP. Rạch Giá", address: "87 Nguyễn Trung Trực, P. Vĩnh Bảo, TP. Rạch Giá, Kiên Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đồng Tháp", group: "mientay", title: "TP. Cao Lãnh", address: "10 Nguyễn Huệ, Phường 1, TP. Cao Lãnh, Đồng Tháp", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Tiền Giang", group: "mientay", title: "TP. Mỹ Tho", address: "33 Lê Thị Hồng Gấm, P.4, TP. Mỹ Tho, Tiền Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bạc Liêu", group: "mientay", title: "TP. Bạc Liêu", address: "228 Trần Phú, Phường 7, Khóm 3, TP. Bạc Liêu", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Cà Mau", group: "mientay", title: "TP. Cà Mau", address: "16 Trần Hưng Đạo, Phường 5, TP. Cà Mau", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Bình Dương", group: "dongnam_taynguyen", title: "Thủ Dầu Một (Chi Nhánh 31)", address: "228 Phú Lợi, P. Phú Hòa, Thủ Dầu Một, Bình Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đồng Nai", group: "dongnam_taynguyen", title: "Biên Hòa (Chi Nhánh 33)", address: "163 Phan Trung, KP 2, P. Tân Mai, TP. Biên Hòa, Đồng Nai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đắk Lắk", group: "dongnam_taynguyen", title: "Buôn Ma Thuột (Chi Nhánh 39)", address: "120 Y Jut, TP. Buôn Ma Thuột, Đắk Lắk", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Gia Lai", group: "dongnam_taynguyen", title: "Pleiku (Chi Nhánh 40)", address: "51 Lê Lợi, TP. Pleiku, Gia Lai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bình Dương", group: "dongnam_taynguyen", title: "TP. Thủ Dầu Một", address: "228 Phú Lợi, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đồng Nai", group: "dongnam_taynguyen", title: "TP. Biên Hoà", address: "163 Phan Trung, KP 2, P. Tân Mai, TP. Biên Hoà, Đồng Nai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Gia Lai", group: "dongnam_taynguyen", title: "Pleiku", address: "51 Lê Lợi, Pleiku, Gia Lai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Quảng Ninh", group: "bac_trung", title: "TP. Hạ Long (Chi Nhánh 30)", address: "20B Cao Xanh, TP. Hạ Long, Quảng Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hải Phòng", group: "bac_trung", title: "Lê Chân (Chi Nhánh 32)", address: "58 Hồ Sen, Dư Hàng, Lê Chân, Hải Phòng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Thanh Hóa", group: "bac_trung", title: "TP. Thanh Hóa (Chi Nhánh 35)", address: "468A Trần Phú, Ba Đình, TP. Thanh Hóa", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Thái Nguyên", group: "bac_trung", title: "TP. Thái Nguyên (Chi Nhánh 36)", address: "19A Minh Cầu, Phan Đình Phùng, TP. Thái Nguyên", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hải Dương", group: "bac_trung", title: "TP. Hải Dương (Chi Nhánh 37)", address: "18A Phạm Ngũ Lão, P. Lê Thanh Nghị, Hải Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Bắc Ninh", group: "bac_trung", title: "TP. Bắc Ninh (Chi Nhánh 38)", address: "19 Nguyễn Hữu Nghiêm, TP. Bắc Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" }
+        { province: "Quảng Ninh", group: "bac_trung", title: "TP. Hạ Long", address: "20B Cao Xanh, TP. Hạ Long, Quảng Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bắc Ninh", group: "bac_trung", title: "TP. Bắc Ninh", address: "Số 1 Nguyễn Hữu Nghiêm, TP. Bắc Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hải Phòng", group: "bac_trung", title: "Lê Chân", address: "58 Hồ Sen, Dư Hàng, Lê Chân, Hải Phòng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hải Dương", group: "bac_trung", title: "TP. Hải Dương", address: "18A Phạm Ngũ Lão, P. Lê Thanh Nghị, Hải Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Thái Nguyên", group: "bac_trung", title: "TP. Thái Nguyên", address: "19A Minh Cầu, Phan Đình Phùng, TP. Thái Nguyên", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Thanh Hóa", group: "bac_trung", title: "TP. Thanh Hóa", address: "468A Trần Phú, Ba Đình, TP. Thanh Hóa", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" }
       ];
 
       var activeRegion = "all";
