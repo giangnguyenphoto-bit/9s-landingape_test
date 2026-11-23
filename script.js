@@ -198,7 +198,7 @@
           var card = document.createElement("article");
           card.className = "branch-card";
           var mapUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Bánh Sầu Riêng 9 Sạch " + b.address);
-          var phoneFmt = b.phone.replace(/(\d{4})(\d{3})(\d{3})/, "$1 $2 $3");
+          var phoneFmt = b.phone.replace(/(\d{3})(\d{4})(\d{3})/, "$1 $2 $3");
 
           card.innerHTML =
             '<div class="branch-top">' +
