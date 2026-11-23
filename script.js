@@ -126,64 +126,120 @@
         requestAnimationFrame(drawFrame);
       }
 
-      // 33 Verified Branches Directory (Informational + Maps + Phone)
+      // 33 Verified Branches Directory grouped by 5 intuitive regions
       var BRANCHES = [
-        { province: "Hồ Chí Minh", title: "Quận 5", address: "04, Lô B Chung cư Nguyễn Biểu, P.1, Quận 5, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "Quận Phú Nhuận", address: "337 Phan Đình Phùng, P.15, Quận Phú Nhuận, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "Quận Gò Vấp", address: "312 Lê Văn Thọ, P.11, Quận Gò Vấp, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "TP. Thủ Đức (Linh Trung)", address: "29 Hoàng Diệu 2, P. Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hồ Chí Minh", title: "TP. Thủ Đức (TTTM Gigamall)", address: "L5 - Booth 8, Tầng 5, TTTM GIGAMALL Thủ Đức, 240 - 242 Phạm Văn Đồng, P. Hiệp Bình, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        // 1. TP.HCM & Lân cận (7): TP.HCM (5), Bình Dương, Đồng Nai
+        { province: "TP.HCM", region: "hcm_lancan", title: "Quận 5", address: "04, Lô B Chung cư Nguyễn Biểu, P.1, Quận 5, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "TP.HCM", region: "hcm_lancan", title: "Quận Phú Nhuận", address: "337 Phan Đình Phùng, P.15, Quận Phú Nhuận, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "TP.HCM", region: "hcm_lancan", title: "Quận Gò Vấp", address: "312 Lê Văn Thọ, P.11, Quận Gò Vấp, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "TP.HCM", region: "hcm_lancan", title: "TP. Thủ Đức (Linh Trung)", address: "29 Hoàng Diệu 2, P. Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "TP.HCM", region: "hcm_lancan", title: "TP. Thủ Đức (TTTM Gigamall)", address: "L5 - Booth 8, Tầng 5, TTTM GIGAMALL Thủ Đức, 240 - 242 Phạm Văn Đồng, P. Hiệp Bình, TP. Hồ Chí Minh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bình Dương", region: "hcm_lancan", title: "TP. Thủ Dầu Một", address: "228 Phú Lợi, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đồng Nai", region: "hcm_lancan", title: "TP. Biên Hoà", address: "163 Phan Trung, KP 2, P. Tân Mai, TP. Biên Hoà, Đồng Nai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Hà Nội", title: "Hoàn Kiếm", address: "49 Hàng Bài, Quận Hoàn Kiếm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Đống Đa", address: "36A Ô Chợ Dừa, Quận Đống Đa, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Ba Đình", address: "69B Đội Cấn, Quận Ba Đình, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Long Biên", address: "177 Ngọc Lâm, Quận Long Biên, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Nam Từ Liêm", address: "193 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hà Nội", title: "Hà Đông", address: "11 Trần Phú, Quận Hà Đông, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        // 2. Miền Tây (10): Cần Thơ (2), An Giang (2), Vĩnh Long, Kiên Giang, Đồng Tháp, Tiền Giang, Bạc Liêu, Cà Mau
+        { province: "Cần Thơ", region: "mientay", title: "Ninh Kiều", address: "124 Mậu Thân, P. An Phú, Q. Ninh Kiều, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Cần Thơ", region: "mientay", title: "An Bình", address: "96 Nguyễn Văn Cừ nối dài, P. An Bình, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "An Giang", region: "mientay", title: "TP. Long Xuyên", address: "290 Lý Thái Tổ nối dài, TP. Long Xuyên, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "An Giang", region: "mientay", title: "Châu Đốc", address: "Tổ 12, Phan Đình Phùng, P. Châu Phú B, Châu Đốc, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Vĩnh Long", region: "mientay", title: "TP. Vĩnh Long", address: "77/1 Trưng Nữ Vương, Phường 1, TP. Vĩnh Long", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Kiên Giang", region: "mientay", title: "TP. Rạch Giá", address: "87 Nguyễn Trung Trực, P. Vĩnh Bảo, TP. Rạch Giá, Kiên Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đồng Tháp", region: "mientay", title: "TP. Cao Lãnh", address: "10 Nguyễn Huệ, Phường 1, TP. Cao Lãnh, Đồng Tháp", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Tiền Giang", region: "mientay", title: "TP. Mỹ Tho", address: "33 Lê Thị Hồng Gấm, P.4, TP. Mỹ Tho, Tiền Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bạc Liêu", region: "mientay", title: "TP. Bạc Liêu", address: "228 Trần Phú, Phường 7, Khóm 3, TP. Bạc Liêu", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Cà Mau", region: "mientay", title: "TP. Cà Mau", address: "16 Trần Hưng Đạo, Phường 5, TP. Cà Mau", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Cần Thơ", title: "Ninh Kiều", address: "124 Mậu Thân, P. An Phú, Q. Ninh Kiều, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Cần Thơ", title: "An Bình", address: "96 Nguyễn Văn Cừ nối dài, P. An Bình, Cần Thơ", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        // 3. Hà Nội (6)
+        { province: "Hà Nội", region: "hanoi", title: "Hoàn Kiếm", address: "49 Hàng Bài, Quận Hoàn Kiếm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", region: "hanoi", title: "Đống Đa", address: "36A Ô Chợ Dừa, Quận Đống Đa, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", region: "hanoi", title: "Ba Đình", address: "69B Đội Cấn, Quận Ba Đình, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", region: "hanoi", title: "Long Biên", address: "177 Ngọc Lâm, Quận Long Biên, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", region: "hanoi", title: "Nam Từ Liêm", address: "193 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hà Nội", region: "hanoi", title: "Hà Đông", address: "11 Trần Phú, Quận Hà Đông, Hà Nội", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Đà Nẵng", title: "Hải Châu", address: "260 Trưng Nữ Vương, Quận Hải Châu, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đà Nẵng", title: "Đống Đa", address: "238 Đống Đa, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đà Nẵng", title: "Ngũ Hành Sơn", address: "71 Châu Thị Vĩnh Tế, P. Ngũ Hành Sơn, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        // 4. Miền Bắc khác (5): Quảng Ninh, Bắc Ninh, Hải Phòng, Hải Dương, Thái Nguyên
+        { province: "Quảng Ninh", region: "mienbac_khac", title: "TP. Hạ Long", address: "20B Cao Xanh, TP. Hạ Long, Quảng Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Bắc Ninh", region: "mienbac_khac", title: "TP. Bắc Ninh", address: "Số 1 Nguyễn Hữu Nghiêm, TP. Bắc Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hải Phòng", region: "mienbac_khac", title: "Lê Chân", address: "58 Hồ Sen, Dư Hàng, Lê Chân, Hải Phòng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Hải Dương", region: "mienbac_khac", title: "TP. Hải Dương", address: "18A Phạm Ngũ Lão, P. Lê Thanh Nghị, Hải Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Thái Nguyên", region: "mienbac_khac", title: "TP. Thái Nguyên", address: "19A Minh Cầu, Phan Đình Phùng, TP. Thái Nguyên", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
 
-        { province: "Vĩnh Long", group: "mientay", title: "TP. Vĩnh Long", address: "77/1 Trưng Nữ Vương, Phường 1, TP. Vĩnh Long", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "An Giang", group: "mientay", title: "TP. Long Xuyên", address: "290 Lý Thái Tổ nối dài, TP. Long Xuyên, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "An Giang", group: "mientay", title: "Châu Đốc", address: "Tổ 12, Phan Đình Phùng, P. Châu Phú B, Châu Đốc, An Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Kiên Giang", group: "mientay", title: "TP. Rạch Giá", address: "87 Nguyễn Trung Trực, P. Vĩnh Bảo, TP. Rạch Giá, Kiên Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đồng Tháp", group: "mientay", title: "TP. Cao Lãnh", address: "10 Nguyễn Huệ, Phường 1, TP. Cao Lãnh, Đồng Tháp", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Tiền Giang", group: "mientay", title: "TP. Mỹ Tho", address: "33 Lê Thị Hồng Gấm, P.4, TP. Mỹ Tho, Tiền Giang", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Bạc Liêu", group: "mientay", title: "TP. Bạc Liêu", address: "228 Trần Phú, Phường 7, Khóm 3, TP. Bạc Liêu", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Cà Mau", group: "mientay", title: "TP. Cà Mau", address: "16 Trần Hưng Đạo, Phường 5, TP. Cà Mau", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-
-        { province: "Bình Dương", group: "dongnam_taynguyen", title: "TP. Thủ Dầu Một", address: "228 Phú Lợi, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Đồng Nai", group: "dongnam_taynguyen", title: "TP. Biên Hoà", address: "163 Phan Trung, KP 2, P. Tân Mai, TP. Biên Hoà, Đồng Nai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Gia Lai", group: "dongnam_taynguyen", title: "Pleiku", address: "51 Lê Lợi, Pleiku, Gia Lai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-
-        { province: "Quảng Ninh", group: "bac_trung", title: "TP. Hạ Long", address: "20B Cao Xanh, TP. Hạ Long, Quảng Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Bắc Ninh", group: "bac_trung", title: "TP. Bắc Ninh", address: "Số 1 Nguyễn Hữu Nghiêm, TP. Bắc Ninh", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hải Phòng", group: "bac_trung", title: "Lê Chân", address: "58 Hồ Sen, Dư Hàng, Lê Chân, Hải Phòng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Hải Dương", group: "bac_trung", title: "TP. Hải Dương", address: "18A Phạm Ngũ Lão, P. Lê Thanh Nghị, Hải Dương", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Thái Nguyên", group: "bac_trung", title: "TP. Thái Nguyên", address: "19A Minh Cầu, Phan Đình Phùng, TP. Thái Nguyên", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
-        { province: "Thanh Hóa", group: "bac_trung", title: "TP. Thanh Hóa", address: "468A Trần Phú, Ba Đình, TP. Thanh Hóa", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" }
+        // 5. Trung - Tây Nguyên (5): Đà Nẵng (3), Thanh Hóa, Gia Lai
+        { province: "Đà Nẵng", region: "trung_taynguyen", title: "Hải Châu", address: "260 Trưng Nữ Vương, Quận Hải Châu, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đà Nẵng", region: "trung_taynguyen", title: "Đống Đa", address: "238 Đống Đa, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Đà Nẵng", region: "trung_taynguyen", title: "Ngũ Hành Sơn", address: "71 Châu Thị Vĩnh Tế, P. Ngũ Hành Sơn, Đà Nẵng", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Thanh Hóa", region: "trung_taynguyen", title: "TP. Thanh Hóa", address: "468A Trần Phú, Ba Đình, TP. Thanh Hóa", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" },
+        { province: "Gia Lai", region: "trung_taynguyen", title: "Pleiku", address: "51 Lê Lợi, Pleiku, Gia Lai", time: "7h00 - 23h00 (kể cả CN và ngày lễ)", phone: "0939999132" }
       ];
 
       var activeRegion = "all";
+      var activeProvince = "all";
       var branchGrid = document.getElementById("branchGrid");
       var branchCount = document.getElementById("branchCount");
       var searchInput = document.getElementById("branchSearch");
+      var subChipRow = document.getElementById("provinceSubChips");
 
       function normalize(str) {
         return (str || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       }
 
+      function renderSubChips() {
+        if (!subChipRow) return;
+        if (activeRegion === "all") {
+          subChipRow.hidden = true;
+          subChipRow.innerHTML = "";
+          return;
+        }
+        var regionItems = BRANCHES.filter(function (b) { return b.region === activeRegion; });
+        var counts = {};
+        var order = [];
+        regionItems.forEach(function (b) {
+          if (!counts[b.province]) {
+            counts[b.province] = 0;
+            order.push(b.province);
+          }
+          counts[b.province] += 1;
+        });
+        if (order.length <= 1) {
+          subChipRow.hidden = true;
+          subChipRow.innerHTML = "";
+          return;
+        }
+        subChipRow.hidden = false;
+        subChipRow.innerHTML = "";
+
+        var allBtn = document.createElement("button");
+        allBtn.type = "button";
+        allBtn.className = "subchip" + (activeProvince === "all" ? " active" : "");
+        allBtn.textContent = "Tất cả khu vực (" + regionItems.length + ")";
+        allBtn.addEventListener("click", function () {
+          activeProvince = "all";
+          renderSubChips();
+          renderBranches();
+        });
+        subChipRow.appendChild(allBtn);
+
+        order.forEach(function (prov) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "subchip" + (activeProvince === prov ? " active" : "");
+          btn.textContent = prov + " (" + counts[prov] + ")";
+          btn.addEventListener("click", function () {
+            activeProvince = prov;
+            renderSubChips();
+            renderBranches();
+          });
+          subChipRow.appendChild(btn);
+        });
+      }
+
       function renderBranches() {
         var q = normalize(searchInput.value.trim());
         var list = BRANCHES.filter(function (b) {
-          var regionMatch = activeRegion === "all" || b.province === activeRegion || b.group === activeRegion;
+          var regionMatch = activeRegion === "all" || b.region === activeRegion;
+          var provMatch = activeProvince === "all" || b.province === activeProvince;
           var textMatch = !q || normalize(b.province + " " + b.title + " " + b.address).indexOf(q) !== -1;
-          return regionMatch && textMatch;
+          return regionMatch && provMatch && textMatch;
         });
 
         branchCount.textContent = "Đang hiển thị " + list.length + " / " + BRANCHES.length + " chi nhánh";
@@ -216,15 +272,29 @@
         });
       }
 
+      function selectRegion(region) {
+        activeRegion = region || "all";
+        activeProvince = "all";
+        document.querySelectorAll("#regionChips .chip").forEach(function (c) {
+          c.classList.toggle("active", c.getAttribute("data-region") === activeRegion);
+        });
+        renderSubChips();
+        renderBranches();
+      }
+
       document.querySelectorAll("#regionChips .chip").forEach(function (chip) {
         chip.addEventListener("click", function () {
-          document.querySelectorAll("#regionChips .chip").forEach(function (c) { c.classList.remove("active"); });
-          chip.classList.add("active");
-          activeRegion = chip.getAttribute("data-region");
-          renderBranches();
+          selectRegion(chip.getAttribute("data-region"));
+        });
+      });
+
+      document.querySelectorAll("[data-jump-region]").forEach(function (link) {
+        link.addEventListener("click", function () {
+          selectRegion(link.getAttribute("data-jump-region"));
         });
       });
 
       searchInput.addEventListener("input", renderBranches);
+      renderSubChips();
       renderBranches();
     })();

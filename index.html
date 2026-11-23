@@ -581,14 +581,13 @@
         <div class="directory-panel reveal">
           <div class="chip-row" id="regionChips" role="tablist" aria-label="Lọc chi nhánh theo khu vực">
             <button type="button" class="chip active" data-region="all">Tất cả (33)</button>
-            <button type="button" class="chip" data-region="Hồ Chí Minh">TP.HCM (5)</button>
-            <button type="button" class="chip" data-region="Hà Nội">Hà Nội (6)</button>
-            <button type="button" class="chip" data-region="Cần Thơ">Cần Thơ (2)</button>
-            <button type="button" class="chip" data-region="Đà Nẵng">Đà Nẵng (3)</button>
-            <button type="button" class="chip" data-region="mientay">Miền Tây khác (8)</button>
-            <button type="button" class="chip" data-region="dongnam_taynguyen">Đông Nam Bộ &amp; Tây Nguyên (3)</button>
-            <button type="button" class="chip" data-region="bac_trung">Miền Bắc &amp; Trung (6)</button>
+            <button type="button" class="chip" data-region="hcm_lancan">TP.HCM &amp; Lân cận (7)</button>
+            <button type="button" class="chip" data-region="mientay">Miền Tây (10)</button>
+            <button type="button" class="chip" data-region="hanoi">Hà Nội (6)</button>
+            <button type="button" class="chip" data-region="mienbac_khac">Miền Bắc khác (5)</button>
+            <button type="button" class="chip" data-region="trung_taynguyen">Trung - Tây Nguyên (5)</button>
           </div>
+          <div class="subchip-row" id="provinceSubChips" hidden aria-label="Lọc nhanh theo tỉnh thành"></div>
 
           <input type="search" id="branchSearch" class="search-box" placeholder="Tìm nhanh theo quận, tên đường hoặc tỉnh thành (VD: Quận 5, Hoàn Kiếm, Hải Châu, Mậu Thân...)" aria-label="Tìm địa chỉ chi nhánh">
           <p class="branch-count" id="branchCount">Đang hiển thị 33 chi nhánh</p>
@@ -686,10 +685,11 @@
           </div>
           <div class="footer-col">
             <h4>CHI NHÁNH</h4>
-            <a href="#branches">TP. Hồ Chí Minh (5)</a>
-            <a href="#branches">Hà Nội (6)</a>
-            <a href="#branches">Cần Thơ &amp; Miền Tây (10)</a>
-            <a href="#branches">Đà Nẵng &amp; Toàn Quốc (12)</a>
+            <a href="#branches" data-jump-region="hcm_lancan">TP.HCM &amp; Lân cận (7)</a>
+            <a href="#branches" data-jump-region="mientay">Miền Tây (10)</a>
+            <a href="#branches" data-jump-region="hanoi">Hà Nội (6)</a>
+            <a href="#branches" data-jump-region="mienbac_khac">Miền Bắc khác (5)</a>
+            <a href="#branches" data-jump-region="trung_taynguyen">Trung - Tây Nguyên (5)</a>
           </div>
           <div class="footer-col">
             <h4>KẾT NỐI &amp; ĐẶT HÀNG</h4>
